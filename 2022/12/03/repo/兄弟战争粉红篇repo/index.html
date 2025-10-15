@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon.ico">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"hide","padding":18,"offset":12,"onmobile":true},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":true,"color":"#886ce4","save":"manual"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="123游玩顺序：要→雅臣→侑介→昴→风斗→椿→光→弥→枣→右京→梓→祈织→琉生听说朱利线只有be，所以没打算打。  可能之前很少打这种需要打日常的游戏，所以第一次看到要打日常，就直接关游戏了。后面看到其他人的游玩cg就重新玩了。打完要之后就上头一直打下去了。 看过的剧情几乎都是快进速通了，几乎每个结局和后日谈我都挺喜欢的。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="兄弟战争粉红篇repo">
+<meta property="og:url" content="http://example.com/2022/12/03/repo/%E5%85%84%E5%BC%9F%E6%88%98%E4%BA%89%E7%B2%89%E7%BA%A2%E7%AF%87repo/index.html">
+<meta property="og:site_name" content="天王星海王安眠仓">
+<meta property="og:description" content="123游玩顺序：要→雅臣→侑介→昴→风斗→椿→光→弥→枣→右京→梓→祈织→琉生听说朱利线只有be，所以没打算打。  可能之前很少打这种需要打日常的游戏，所以第一次看到要打日常，就直接关游戏了。后面看到其他人的游玩cg就重新玩了。打完要之后就上头一直打下去了。 看过的剧情几乎都是快进速通了，几乎每个结局和后日谈我都挺喜欢的。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://github.com/Gardenxt/testmages/blob/main/repo/%E5%85%84%E5%BC%9F%E6%88%98%E4%BA%89%E7%B2%89%E7%BA%A2%E7%AF%87repo/00758ytHly1h8qqu2d1yxj30j60a9q59.jpg?raw=true">
+<meta property="og:image" content="https://github.com/Gardenxt/testmages/blob/main/repo/%E5%85%84%E5%BC%9F%E6%88%98%E4%BA%89%E7%B2%89%E7%BA%A2%E7%AF%87repo/00758ytHly1h8qrhttjzbj316c0o2qmq.jpg?raw=true">
+<meta property="og:image" content="https://github.com/Gardenxt/testmages/blob/main/repo/%E5%85%84%E5%BC%9F%E6%88%98%E4%BA%89%E7%B2%89%E7%BA%A2%E7%AF%87repo/00758ytHly1h8qre2t0hfj30j60a9tb6.jpg?raw=true">
+<meta property="og:image" content="https://github.com/Gardenxt/testmages/blob/main/repo/%E5%85%84%E5%BC%9F%E6%88%98%E4%BA%89%E7%B2%89%E7%BA%A2%E7%AF%87repo/00758ytHly1h8qrlz1hjaj316c0o2ng6.jpg?raw=true">
+<meta property="og:image" content="https://github.com/Gardenxt/testmages/blob/main/repo/%E5%85%84%E5%BC%9F%E6%88%98%E4%BA%89%E7%B2%89%E7%BA%A2%E7%AF%87repo/00758ytHly1h8qrxz9syhj30j60a9mzk.jpg?raw=true">
+<meta property="og:image" content="https://github.com/Gardenxt/testmages/blob/main/repo/%E5%85%84%E5%BC%9F%E6%88%98%E4%BA%89%E7%B2%89%E7%BA%A2%E7%AF%87repo/00758ytHly1h8qs3q7056j30j60a9jus.jpg?raw=true">
+<meta property="og:image" content="https://github.com/Gardenxt/testmages/blob/main/repo/%E5%85%84%E5%BC%9F%E6%88%98%E4%BA%89%E7%B2%89%E7%BA%A2%E7%AF%87repo/00758ytHly1h8qs4i6exjj30j60a9go9.jpg?raw=true">
+<meta property="og:image" content="https://github.com/Gardenxt/testmages/blob/main/repo/%E5%85%84%E5%BC%9F%E6%88%98%E4%BA%89%E7%B2%89%E7%BA%A2%E7%AF%87repo/00758ytHly1h8qs5y3w36j30j60a9di5.jpg?raw=true">
+<meta property="og:image" content="https://github.com/Gardenxt/testmages/blob/main/repo/%E5%85%84%E5%BC%9F%E6%88%98%E4%BA%89%E7%B2%89%E7%BA%A2%E7%AF%87repo/00758ytHly1h8qschy9lzj30j60a9dht.jpg?raw=true">
+<meta property="og:image" content="https://github.com/Gardenxt/testmages/blob/main/repo/%E5%85%84%E5%BC%9F%E6%88%98%E4%BA%89%E7%B2%89%E7%BA%A2%E7%AF%87repo/00758ytHly1h8qsenap7rj30j60a9dil.jpg?raw=true">
+<meta property="og:image" content="https://github.com/Gardenxt/testmages/blob/main/repo/%E5%85%84%E5%BC%9F%E6%88%98%E4%BA%89%E7%B2%89%E7%BA%A2%E7%AF%87repo/00758ytHly1h8qsfp7lo6j30j60a9q5i.jpg?raw=true">
+<meta property="og:image" content="https://github.com/Gardenxt/testmages/blob/main/repo/%E5%85%84%E5%BC%9F%E6%88%98%E4%BA%89%E7%B2%89%E7%BA%A2%E7%AF%87repo/00758ytHly1h8qsiggnmlj30j60a9414.jpg?raw=true">
+<meta property="og:image" content="https://github.com/Gardenxt/testmages/blob/main/repo/%E5%85%84%E5%BC%9F%E6%88%98%E4%BA%89%E7%B2%89%E7%BA%A2%E7%AF%87repo/00758ytHly1h8qsme6sbtj30j60a940u.jpg?raw=true">
+<meta property="og:image" content="https://github.com/Gardenxt/testmages/blob/main/repo/%E5%85%84%E5%BC%9F%E6%88%98%E4%BA%89%E7%B2%89%E7%BA%A2%E7%AF%87repo/00758ytHly1h8qsn61truj30j60a9ace.jpg?raw=true">
+<meta property="og:image" content="https://github.com/Gardenxt/testmages/blob/main/repo/%E5%85%84%E5%BC%9F%E6%88%98%E4%BA%89%E7%B2%89%E7%BA%A2%E7%AF%87repo/00758ytHly1h8qstb9nqtj30j60a9tas.jpg?raw=true">
+<meta property="og:image" content="https://github.com/Gardenxt/testmages/blob/main/repo/%E5%85%84%E5%BC%9F%E6%88%98%E4%BA%89%E7%B2%89%E7%BA%A2%E7%AF%87repo/00758ytHly1h8qstgoycij30j60a9di6.jpg?raw=true">
+<meta property="og:image" content="https://github.com/Gardenxt/testmages/blob/main/repo/%E5%85%84%E5%BC%9F%E6%88%98%E4%BA%89%E7%B2%89%E7%BA%A2%E7%AF%87repo/00758ytHly1h8qsz7ynudj30j60a9q5p.jpg?raw=true">
+<meta property="og:image" content="https://github.com/Gardenxt/testmages/blob/main/repo/%E5%85%84%E5%BC%9F%E6%88%98%E4%BA%89%E7%B2%89%E7%BA%A2%E7%AF%87repo/00758ytHly1h8qt13i9w9j30j60a9ac7.jpg?raw=true">
+<meta property="article:published_time" content="2022-12-02T16:00:00.000Z">
+<meta property="article:modified_time" content="2025-07-26T17:21:24.325Z">
+<meta property="article:author" content="箱庭">
+<meta property="article:tag" content="乙女游戏">
+<meta property="article:tag" content="repo">
+<meta property="article:tag" content="兄弟战争">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://github.com/Gardenxt/testmages/blob/main/repo/%E5%85%84%E5%BC%9F%E6%88%98%E4%BA%89%E7%B2%89%E7%BA%A2%E7%AF%87repo/00758ytHly1h8qqu2d1yxj30j60a9q59.jpg?raw=true">
+
+<link rel="canonical" href="http://example.com/2022/12/03/repo/%E5%85%84%E5%BC%9F%E6%88%98%E4%BA%89%E7%B2%89%E7%BA%A2%E7%AF%87repo/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>兄弟战争粉红篇repo | 天王星海王安眠仓</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<style>.darkmode--activated{--body-bg-color:#282828;--content-bg-color:#333;--card-bg-color:#555;--text-color:#ccc;--blockquote-color:#bbb;--link-color:#ccc;--link-hover-color:#eee;--brand-color:#ddd;--brand-hover-color:#ddd;--table-row-odd-bg-color:#282828;--table-row-hover-bg-color:#363636;--menu-item-bg-color:#555;--btn-default-bg:#222;--btn-default-color:#ccc;--btn-default-border-color:#555;--btn-default-hover-bg:#666;--btn-default-hover-color:#ccc;--btn-default-hover-border-color:#666;--highlight-background:#282b2e;--highlight-foreground:#a9b7c6;--highlight-gutter-background:#34393d;--highlight-gutter-foreground:#9ca9b6}.darkmode--activated img{opacity:.75}.darkmode--activated img:hover{opacity:.9}.darkmode--activated code{color:#69dbdc;background:0 0}button.darkmode-toggle{z-index:9999}.darkmode-ignore,img{display:flex!important}.beian img{display:inline-block!important}</style></head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">天王星海王安眠仓</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">混吃等死</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-乙游">
+
+    <a href="/otome/" rel="section"><i class="fa fa-fw fa-heart"></i>乙游</a>
+
+  </li>
+        <li class="menu-item menu-item-进度">
+
+    <a href="/schedule/" rel="section"><i class="fa fa-fw fa-tree"></i>进度</a>
+
+  </li>
+        <li class="menu-item menu-item-搬运">
+
+    <a href="/2023/03/16/%E5%B7%A5%E5%85%B7/%E4%B9%99%E5%A5%B3%E6%B8%B8%E6%88%8F%E6%90%AC%E8%BF%90/" rel="section"><i class="fa fa-fw fa-leaf"></i>搬运</a>
+
+  </li>
+        <li class="menu-item menu-item-攻略">
+
+    <a href="/wiki/" rel="section"><i class="fa fa-fw fa-exclamation"></i>攻略</a>
+
+  </li>
+        <li class="menu-item menu-item-photos">
+
+    <a href="/photos/" rel="section"><i class="fa fa-fw fa-camera"></i>相册</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/12/03/repo/%E5%85%84%E5%BC%9F%E6%88%98%E4%BA%89%E7%B2%89%E7%BA%A2%E7%AF%87repo/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://raw.githubusercontent.com/Gardenxt/testmages/main/photo/avatar1.jpg#/images/avatar.gif">
+      <meta itemprop="name" content="箱庭">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="天王星海王安眠仓">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          兄弟战争粉红篇repo
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2022-12-03 00:00:00" itemprop="dateCreated datePublished" datetime="2022-12-03T00:00:00+08:00">2022-12-03</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2025-07-27 01:21:24" itemprop="dateModified" datetime="2025-07-27T01:21:24+08:00">2025-07-27</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%B8%B8%E6%88%8F/" itemprop="url" rel="index"><span itemprop="name">游戏</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">游玩顺序：</span><br><span class="line">要→雅臣→侑介→昴→风斗→椿→光→弥→枣→右京→梓→祈织→琉生</span><br><span class="line">听说朱利线只有be，所以没打算打。</span><br></pre></td></tr></table></figure>
+
+<p>可能之前很少打这种需要打日常的游戏，所以第一次看到要打日常，就直接关游戏了。后面看到其他人的游玩cg就重新玩了。打完要之后就上头一直打下去了。</p>
+<p>看过的剧情几乎都是快进速通了，几乎每个结局和后日谈我都挺喜欢的。</p>
+<p>因为隔了太久才想到要写repo，所以或多或少都没啥印象了。</p>
+<h2 id="要"><a href="#要" class="headerlink" title="要"></a>要</h2><p><img src="https://github.com/Gardenxt/testmages/blob/main/repo/%E5%85%84%E5%BC%9F%E6%88%98%E4%BA%89%E7%B2%89%E7%BA%A2%E7%AF%87repo/00758ytHly1h8qqu2d1yxj30j60a9q59.jpg?raw=true" alt="00758ytHly1h8qqu2d1yxj30j60a9q59"></p>
+<p>因为发型问题所以第一个通关的角色，但是诹访部顺一的声音是真的太好听了。</p>
+<p>其实剧情上没什么印象了，但是后日谈是真的过于刺激了。剧情在昂的生日在绘麻被昂压倒亲到后，送绘麻会房间那段也挺有趣的（？）</p>
+<p>其实结尾剪了头发是真的有点吃惊了，但是为什么去公司不继续当和尚我是有点不理解。</p>
+<p><img src="https://github.com/Gardenxt/testmages/blob/main/repo/%E5%85%84%E5%BC%9F%E6%88%98%E4%BA%89%E7%B2%89%E7%BA%A2%E7%AF%87repo/00758ytHly1h8qrhttjzbj316c0o2qmq.jpg?raw=true" alt="00758ytHly1h8qrhttjzbj316c0o2qmq"></p>
+<p>后日谈里，拿绘麻手机接右京电话那段真的，可恶，这就是成熟的大人吗</p>
+<h2 id="雅臣"><a href="#雅臣" class="headerlink" title="雅臣"></a>雅臣</h2><p><img src="https://github.com/Gardenxt/testmages/blob/main/repo/%E5%85%84%E5%BC%9F%E6%88%98%E4%BA%89%E7%B2%89%E7%BA%A2%E7%AF%87repo/00758ytHly1h8qre2t0hfj30j60a9tb6.jpg?raw=true" alt="00758ytHly1h8qre2t0hfj30j60a9tb6"></p>
+<p>最喜欢的cg！这张图雅臣真的好显小。虽然温柔但是会拧下小兔子的头的大哥哥，也是唯一一个后日谈结婚有孩子的人。</p>
+<p><img src="https://github.com/Gardenxt/testmages/blob/main/repo/%E5%85%84%E5%BC%9F%E6%88%98%E4%BA%89%E7%B2%89%E7%BA%A2%E7%AF%87repo/00758ytHly1h8qrlz1hjaj316c0o2ng6.jpg?raw=true" alt="00758ytHly1h8qrlz1hjaj316c0o2ng6"></p>
+<h2 id="侑介"><a href="#侑介" class="headerlink" title="侑介"></a>侑介</h2><p><img src="https://github.com/Gardenxt/testmages/blob/main/repo/%E5%85%84%E5%BC%9F%E6%88%98%E4%BA%89%E7%B2%89%E7%BA%A2%E7%AF%87repo/00758ytHly1h8qrxz9syhj30j60a9mzk.jpg?raw=true" alt="00758ytHly1h8qrxz9syhj30j60a9mzk"></p>
+<p>纯情傲娇的小伙子，一开始就喜欢绘麻的同班同学，动漫里有之前一年级的故事，因为绘麻帮了他还夸他绑的俩小麻花辫好看，就喜欢上了。</p>
+<p>这条线也得刷家族好感度，所以第一次看到了特别漂亮的绘麻。</p>
+<p><img src="https://github.com/Gardenxt/testmages/blob/main/repo/%E5%85%84%E5%BC%9F%E6%88%98%E4%BA%89%E7%B2%89%E7%BA%A2%E7%AF%87repo/00758ytHly1h8qs3q7056j30j60a9jus.jpg?raw=true" alt="00758ytHly1h8qs3q7056j30j60a9jus"></p>
+<p><img src="https://github.com/Gardenxt/testmages/blob/main/repo/%E5%85%84%E5%BC%9F%E6%88%98%E4%BA%89%E7%B2%89%E7%BA%A2%E7%AF%87repo/00758ytHly1h8qs4i6exjj30j60a9go9.jpg?raw=true" alt="00758ytHly1h8qs4i6exjj30j60a9go9"></p>
+<p>店员，做得好，你做得好啊！</p>
+<h2 id="昴"><a href="#昴" class="headerlink" title="昴"></a>昴</h2><p><img src="https://github.com/Gardenxt/testmages/blob/main/repo/%E5%85%84%E5%BC%9F%E6%88%98%E4%BA%89%E7%B2%89%E7%BA%A2%E7%AF%87repo/00758ytHly1h8qs5y3w36j30j60a9di5.jpg?raw=true" alt="00758ytHly1h8qs5y3w36j30j60a9di5"></p>
+<p>我一直以为叫昂，刚刚才发现是昴。</p>
+<p>喜欢篮球的直男，剧情里为什么那么喜欢玩游戏的女主，后面也喜欢篮球了，这就是爱情吗。这个发型我不是很感兴趣，所以也没特别多的印象。</p>
+<p>每次剧情生日肯定要压倒绘麻的工具人（？）</p>
+<h2 id="风斗"><a href="#风斗" class="headerlink" title="风斗"></a>风斗</h2><p>截图最多的角色，我是真没想到我能这么喜欢他。</p>
+<p><img src="https://github.com/Gardenxt/testmages/blob/main/repo/%E5%85%84%E5%BC%9F%E6%88%98%E4%BA%89%E7%B2%89%E7%BA%A2%E7%AF%87repo/00758ytHly1h8qschy9lzj30j60a9dht.jpg?raw=true" alt="00758ytHly1h8qschy9lzj30j60a9dht"></p>
+<p>最喜欢的小恶魔系男主，刚开始没多久就窝在一起看电影的实质小情侣</p>
+<p><img src="https://github.com/Gardenxt/testmages/blob/main/repo/%E5%85%84%E5%BC%9F%E6%88%98%E4%BA%89%E7%B2%89%E7%BA%A2%E7%AF%87repo/00758ytHly1h8qsenap7rj30j60a9dil.jpg?raw=true" alt="00758ytHly1h8qsenap7rj30j60a9dil"></p>
+<p><img src="https://github.com/Gardenxt/testmages/blob/main/repo/%E5%85%84%E5%BC%9F%E6%88%98%E4%BA%89%E7%B2%89%E7%BA%A2%E7%AF%87repo/00758ytHly1h8qsfp7lo6j30j60a9q5i.jpg?raw=true" alt="00758ytHly1h8qsfp7lo6j30j60a9q5i"></p>
+<p>直球系真的很难让人拒绝。立绘和cg差别还挺大的，立绘就是个小很多岁的弟弟，cg就感觉是同龄人了</p>
+<p><img src="https://github.com/Gardenxt/testmages/blob/main/repo/%E5%85%84%E5%BC%9F%E6%88%98%E4%BA%89%E7%B2%89%E7%BA%A2%E7%AF%87repo/00758ytHly1h8qsiggnmlj30j60a9414.jpg?raw=true" alt="00758ytHly1h8qsiggnmlj30j60a9414"></p>
+<p>但是结局是要隐藏恋情，虽然知道偶像肯定不能暴露恋情，但是玩的时候还是有点怪怪的，不过不影响游玩的快乐。</p>
+<p><img src="https://github.com/Gardenxt/testmages/blob/main/repo/%E5%85%84%E5%BC%9F%E6%88%98%E4%BA%89%E7%B2%89%E7%BA%A2%E7%AF%87repo/00758ytHly1h8qsme6sbtj30j60a940u.jpg?raw=true" alt="00758ytHly1h8qsme6sbtj30j60a940u"></p>
+<h2 id="椿"><a href="#椿" class="headerlink" title="椿"></a>椿</h2><p><img src="https://github.com/Gardenxt/testmages/blob/main/repo/%E5%85%84%E5%BC%9F%E6%88%98%E4%BA%89%E7%B2%89%E7%BA%A2%E7%AF%87repo/00758ytHly1h8qsn61truj30j60a9ace.jpg?raw=true" alt="00758ytHly1h8qsn61truj30j60a9ace"></p>
+<p>随心所欲的白发声优帅哥，跟梓的剧情可能因为看过动漫的缘故，所以没那么为难。</p>
+<p>刚认识就妹控的宅男，好感也来的很莫名其妙。实际上会想很多的好哥哥，很喜欢自己的兄弟（梓）。</p>
+<p><img src="https://github.com/Gardenxt/testmages/blob/main/repo/%E5%85%84%E5%BC%9F%E6%88%98%E4%BA%89%E7%B2%89%E7%BA%A2%E7%AF%87repo/00758ytHly1h8qstb9nqtj30j60a9tas.jpg?raw=true" alt="00758ytHly1h8qstb9nqtj30j60a9tas"></p>
+<p><img src="https://github.com/Gardenxt/testmages/blob/main/repo/%E5%85%84%E5%BC%9F%E6%88%98%E4%BA%89%E7%B2%89%E7%BA%A2%E7%AF%87repo/00758ytHly1h8qstgoycij30j60a9di6.jpg?raw=true" alt="00758ytHly1h8qstgoycij30j60a9di6"></p>
+<p>我是真的很喜欢这种没什么距离，经常身体接触的角色。</p>
+<p><img src="https://github.com/Gardenxt/testmages/blob/main/repo/%E5%85%84%E5%BC%9F%E6%88%98%E4%BA%89%E7%B2%89%E7%BA%A2%E7%AF%87repo/00758ytHly1h8qsz7ynudj30j60a9q5p.jpg?raw=true" alt="00758ytHly1h8qsz7ynudj30j60a9q5p"></p>
+<p>打椿线顺带做了三人线的cg</p>
+<h2 id="光"><a href="#光" class="headerlink" title="光"></a>光</h2><p><img src="https://github.com/Gardenxt/testmages/blob/main/repo/%E5%85%84%E5%BC%9F%E6%88%98%E4%BA%89%E7%B2%89%E7%BA%A2%E7%AF%87repo/00758ytHly1h8qt13i9w9j30j60a9ac7.jpg?raw=true" alt="00758ytHly1h8qt13i9w9j30j60a9ac7"></p>
+<p>女装大佬，我以为提问是搞套路，原来是真的在工作（</p>
+<p>因为第一次见是女装的声音，所以换到男装声音就有点不太习惯，到结局听声音也挺微妙。</p>
+<p>剧情的时候的感觉就是，你俩能不能直说，搁着双向但是都不说出来是吧。甚至还写了本书隔了那么久见面才准备说出来。</p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E4%B9%99%E5%A5%B3%E6%B8%B8%E6%88%8F/" rel="tag"># 乙女游戏</a>
+              <a href="/tags/repo/" rel="tag"># repo</a>
+              <a href="/tags/%E5%85%84%E5%BC%9F%E6%88%98%E4%BA%89/" rel="tag"># 兄弟战争</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2022/12/07/%E6%97%A5%E5%B8%B8/%E6%97%A5%E5%B8%B82/" rel="prev" title="！！">
+      <i class="fa fa-chevron-left"></i> ！！
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2022/12/03/repo/%E5%85%84%E5%BC%9F%E6%88%98%E4%BA%89%E8%94%9A%E8%93%9D%E7%AF%87repo/" rel="next" title="兄弟战争蔚蓝篇repo">
+      兄弟战争蔚蓝篇repo <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%A6%81"><span class="nav-number">1.</span> <span class="nav-text">要</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%9B%85%E8%87%A3"><span class="nav-number">2.</span> <span class="nav-text">雅臣</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BE%91%E4%BB%8B"><span class="nav-number">3.</span> <span class="nav-text">侑介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%98%B4"><span class="nav-number">4.</span> <span class="nav-text">昴</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%A3%8E%E6%96%97"><span class="nav-number">5.</span> <span class="nav-text">风斗</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%A4%BF"><span class="nav-number">6.</span> <span class="nav-text">椿</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%89"><span class="nav-number">7.</span> <span class="nav-text">光</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="箱庭"
+      src="https://raw.githubusercontent.com/Gardenxt/testmages/main/photo/avatar1.jpg#/images/avatar.gif">
+  <p class="site-author-name" itemprop="name">箱庭</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">40</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+        <span class="site-state-item-count">28</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2025</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">箱庭</span>
+</div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+<script src="/js/bookmark.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+
+<script>
+var options = {
+  bottom: '80px',
+  right: '32px',
+  left: 'unset',
+  time: '0.5s',
+  mixColor: 'transparent',
+  backgroundColor: 'transparent',
+  buttonColorDark: '#282828',
+  buttonColorLight: '#fff',
+  saveInCookies: true,
+  label: '💜',
+  autoMatchOsTheme: true
+}
+const darkmode = new Darkmode(options);
+window.darkmode = darkmode;
+darkmode.showWidget();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon.ico">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"hide","padding":18,"offset":12,"onmobile":true},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":true,"color":"#886ce4","save":"manual"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="非常简短的视觉小说。大概简述的是因为情感纠纷引起的血腥恋爱故事。第一二部主角是Olive，一只希望所有人开心的狗狗，所以很多时候都得努力刷所有人好感度。第三部则是扮演反派的Patches。是很帅的黑白狗狗！ 第一部是Patches因为爱而不得猫猫Angel而杀害了他，Angel的姐姐生气到在狗狗高中进行屠杀，Olive结交幸存者作为朋友，并且合猫猫姐弟把Angel送入了地狱，结局是Anger的灵">
+<meta property="og:type" content="article">
+<meta property="og:title" content="可爱的毛茸茸们">
+<meta property="og:url" content="http://example.com/2025/10/15/repo/Purrfect%20Apawcalypserepo/index.html">
+<meta property="og:site_name" content="天王星海王安眠仓">
+<meta property="og:description" content="非常简短的视觉小说。大概简述的是因为情感纠纷引起的血腥恋爱故事。第一二部主角是Olive，一只希望所有人开心的狗狗，所以很多时候都得努力刷所有人好感度。第三部则是扮演反派的Patches。是很帅的黑白狗狗！ 第一部是Patches因为爱而不得猫猫Angel而杀害了他，Angel的姐姐生气到在狗狗高中进行屠杀，Olive结交幸存者作为朋友，并且合猫猫姐弟把Angel送入了地狱，结局是Anger的灵">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://github.com/Gardenxt/testmages/blob/main/photo/%E5%AE%8C%E7%BE%8E%E6%9C%AB%E6%97%A52-%E6%B0%B8%E6%81%92%E7%82%BC%E7%8B%B1%202025_10_15%208_05_11.png?raw=true">
+<meta property="og:image" content="https://github.com/Gardenxt/testmages/blob/main/photo/Steam%202025_10_15%208_49_05.png?raw=true">
+<meta property="og:image" content="https://github.com/Gardenxt/testmages/blob/main/photo/%E5%AE%8C%E7%BE%8E%E6%9C%AB%E6%97%A53%EF%BC%9A%E8%A1%A5%E4%B8%81%E7%9A%84%E6%9C%AB%E6%97%A5%202025_10_15%208_49_10.png?raw=true">
+<meta property="og:image" content="https://github.com/Gardenxt/testmages/blob/main/photo/%E5%AE%8C%E7%BE%8E%E6%9C%AB%E6%97%A53%EF%BC%9A%E8%A1%A5%E4%B8%81%E7%9A%84%E6%9C%AB%E6%97%A5%202025_10_15%208_49_14.png?raw=true">
+<meta property="og:image" content="https://github.com/Gardenxt/testmages/blob/main/photo/%E5%AE%8C%E7%BE%8E%E6%9C%AB%E6%97%A53%EF%BC%9A%E8%A1%A5%E4%B8%81%E7%9A%84%E6%9C%AB%E6%97%A5%202025_10_15%208_57_54.png?raw=true">
+<meta property="og:image" content="https://github.com/Gardenxt/testmages/blob/main/photo/%E5%AE%8C%E7%BE%8E%E6%9C%AB%E6%97%A53%EF%BC%9A%E8%A1%A5%E4%B8%81%E7%9A%84%E6%9C%AB%E6%97%A5%202025_10_15%208_58_00.png?raw=true">
+<meta property="og:image" content="https://github.com/Gardenxt/testmages/blob/main/photo/%E5%AE%8C%E7%BE%8E%E6%9C%AB%E6%97%A53%EF%BC%9A%E8%A1%A5%E4%B8%81%E7%9A%84%E6%9C%AB%E6%97%A5%202025_10_15%208_58_03.png?raw=true">
+<meta property="og:image" content="https://github.com/Gardenxt/testmages/blob/main/photo/%E5%AE%8C%E7%BE%8E%E6%9C%AB%E6%97%A53%EF%BC%9A%E8%A1%A5%E4%B8%81%E7%9A%84%E6%9C%AB%E6%97%A5%202025_10_15%209_00_24.png?raw=true">
+<meta property="article:published_time" content="2025-10-15T01:04:18.000Z">
+<meta property="article:modified_time" content="2025-10-15T01:32:13.049Z">
+<meta property="article:author" content="箱庭">
+<meta property="article:tag" content="游戏">
+<meta property="article:tag" content="repo">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://github.com/Gardenxt/testmages/blob/main/photo/%E5%AE%8C%E7%BE%8E%E6%9C%AB%E6%97%A52-%E6%B0%B8%E6%81%92%E7%82%BC%E7%8B%B1%202025_10_15%208_05_11.png?raw=true">
+
+<link rel="canonical" href="http://example.com/2025/10/15/repo/Purrfect%20Apawcalypserepo/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>可爱的毛茸茸们 | 天王星海王安眠仓</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<style>.darkmode--activated{--body-bg-color:#282828;--content-bg-color:#333;--card-bg-color:#555;--text-color:#ccc;--blockquote-color:#bbb;--link-color:#ccc;--link-hover-color:#eee;--brand-color:#ddd;--brand-hover-color:#ddd;--table-row-odd-bg-color:#282828;--table-row-hover-bg-color:#363636;--menu-item-bg-color:#555;--btn-default-bg:#222;--btn-default-color:#ccc;--btn-default-border-color:#555;--btn-default-hover-bg:#666;--btn-default-hover-color:#ccc;--btn-default-hover-border-color:#666;--highlight-background:#282b2e;--highlight-foreground:#a9b7c6;--highlight-gutter-background:#34393d;--highlight-gutter-foreground:#9ca9b6}.darkmode--activated img{opacity:.75}.darkmode--activated img:hover{opacity:.9}.darkmode--activated code{color:#69dbdc;background:0 0}button.darkmode-toggle{z-index:9999}.darkmode-ignore,img{display:flex!important}.beian img{display:inline-block!important}</style></head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">天王星海王安眠仓</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">混吃等死</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-乙游">
+
+    <a href="/otome/" rel="section"><i class="fa fa-fw fa-heart"></i>乙游</a>
+
+  </li>
+        <li class="menu-item menu-item-进度">
+
+    <a href="/schedule/" rel="section"><i class="fa fa-fw fa-tree"></i>进度</a>
+
+  </li>
+        <li class="menu-item menu-item-搬运">
+
+    <a href="/2023/03/16/%E5%B7%A5%E5%85%B7/%E4%B9%99%E5%A5%B3%E6%B8%B8%E6%88%8F%E6%90%AC%E8%BF%90/" rel="section"><i class="fa fa-fw fa-leaf"></i>搬运</a>
+
+  </li>
+        <li class="menu-item menu-item-攻略">
+
+    <a href="/wiki/" rel="section"><i class="fa fa-fw fa-exclamation"></i>攻略</a>
+
+  </li>
+        <li class="menu-item menu-item-photos">
+
+    <a href="/photos/" rel="section"><i class="fa fa-fw fa-camera"></i>相册</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2025/10/15/repo/Purrfect%20Apawcalypserepo/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://raw.githubusercontent.com/Gardenxt/testmages/main/photo/avatar1.jpg#/images/avatar.gif">
+      <meta itemprop="name" content="箱庭">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="天王星海王安眠仓">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          可爱的毛茸茸们
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2025-10-15 09:04:18 / 修改时间：09:32:13" itemprop="dateCreated datePublished" datetime="2025-10-15T09:04:18+08:00">2025-10-15</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%B8%B8%E6%88%8F/" itemprop="url" rel="index"><span itemprop="name">游戏</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p> 非常简短的视觉小说。大概简述的是因为情感纠纷引起的血腥恋爱故事。第一二部主角是Olive，一只希望所有人开心的狗狗，所以很多时候都得努力刷所有人好感度。第三部则是扮演反派的Patches。是很帅的黑白狗狗！</p>
+<p>第一部是Patches因为爱而不得猫猫Angel而杀害了他，Angel的姐姐生气到在狗狗高中进行屠杀，Olive结交幸存者作为朋友，并且合猫猫姐弟把Angel送入了地狱，结局是Anger的灵魂进入了Patches的身体，大家沾着血迹，一起去喝奶昔了。</p>
+<p>第二部Patches利用了，在狗狗高中被无差别杀害的——猫狗混血Ginger复活，进入了Anger的尸体，并且利用其他僵尸狗狗来复仇。后面因为Ginger与Olive谈心后成为朋友，Ginger召唤法阵将Patches送回地狱时，不小心Olive也跟着进入地狱。Patches和Olive在地狱中聊天的过程中也慢慢想开，Olive被召唤回现实之后也求情把Patches带了回来，重新继续举办今天的Olive生日派对。</p>
+<p><img src="https://github.com/Gardenxt/testmages/blob/main/photo/%E5%AE%8C%E7%BE%8E%E6%9C%AB%E6%97%A52-%E6%B0%B8%E6%81%92%E7%82%BC%E7%8B%B1%202025_10_15%208_05_11.png?raw=true" alt="完美的生日派对"></p>
+<p>第三部只在第二部的一天后，他们决定重新复活所有被杀害的狗狗，举办了一次猫狗公学日。这次的主角是Patches。在跟所有人聊天的过程中，Patches逐渐改变，也放弃了对前男友Angel的执着（说实在的，在图书馆一直盯着又扭头不看，来来回回好几次真的好酸涩。但是看上去Angel已经不想有什么联系了。）</p>
+<p>在结局可以选择拯救所有人和杀害所有人，在杀害所有人中，Patches一边说着终于结束了的话，表情又非常悲伤就很好嗑。但是完美结局是真的好甜。</p>
+<p><img src="https://github.com/Gardenxt/testmages/blob/main/photo/Steam%202025_10_15%208_49_05.png?raw=true" alt="回忆"></p>
+<p><img src="https://github.com/Gardenxt/testmages/blob/main/photo/%E5%AE%8C%E7%BE%8E%E6%9C%AB%E6%97%A53%EF%BC%9A%E8%A1%A5%E4%B8%81%E7%9A%84%E6%9C%AB%E6%97%A5%202025_10_15%208_49_10.png?raw=true" alt="思考了一下"></p>
+<p><img src="https://github.com/Gardenxt/testmages/blob/main/photo/%E5%AE%8C%E7%BE%8E%E6%9C%AB%E6%97%A53%EF%BC%9A%E8%A1%A5%E4%B8%81%E7%9A%84%E6%9C%AB%E6%97%A5%202025_10_15%208_49_14.png?raw=true" alt="明明可以走掉，但是还是留了下来"></p>
+<p>这里就很可爱！明明完全可以不管自己觉得很无聊的公学日，但是想了想Olive会难过，或者又想到TA很在乎自己，就傲娇的留下来了！</p>
+<p><img src="https://github.com/Gardenxt/testmages/blob/main/photo/%E5%AE%8C%E7%BE%8E%E6%9C%AB%E6%97%A53%EF%BC%9A%E8%A1%A5%E4%B8%81%E7%9A%84%E6%9C%AB%E6%97%A5%202025_10_15%208_57_54.png?raw=true" alt="所有人谈论Patches不知道的事情"></p>
+<p><img src="https://github.com/Gardenxt/testmages/blob/main/photo/%E5%AE%8C%E7%BE%8E%E6%9C%AB%E6%97%A53%EF%BC%9A%E8%A1%A5%E4%B8%81%E7%9A%84%E6%9C%AB%E6%97%A5%202025_10_15%208_58_00.png?raw=true" alt="等等"></p>
+<p><img src="https://github.com/Gardenxt/testmages/blob/main/photo/%E5%AE%8C%E7%BE%8E%E6%9C%AB%E6%97%A53%EF%BC%9A%E8%A1%A5%E4%B8%81%E7%9A%84%E6%9C%AB%E6%97%A5%202025_10_15%208_58_03.png?raw=true" alt="又害羞了"></p>
+<p><img src="https://github.com/Gardenxt/testmages/blob/main/photo/%E5%AE%8C%E7%BE%8E%E6%9C%AB%E6%97%A53%EF%BC%9A%E8%A1%A5%E4%B8%81%E7%9A%84%E6%9C%AB%E6%97%A5%202025_10_15%209_00_24.png?raw=true" alt="完美结局——两人单独去约会了"></p>
+<p>这种内心矛盾的黑白毛已经不是第一次见了。很希望所有人都注意他，但是太在乎可怜他又会很生气，就需要一个很博爱（？）的天使性格来陪伴他吧。</p>
+<p>拧巴的人需要一个赶不走的恋人啊:D</p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E6%B8%B8%E6%88%8F/" rel="tag"># 游戏</a>
+              <a href="/tags/repo/" rel="tag"># repo</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item"></div>
+      <div class="post-nav-item">
+    <a href="/2025/10/14/%E6%97%A5%E5%B8%B8/%E6%97%A5%E5%B8%B89/" rel="next" title="最近在想怎么把月饼吃完">
+      最近在想怎么把月饼吃完 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="箱庭"
+      src="https://raw.githubusercontent.com/Gardenxt/testmages/main/photo/avatar1.jpg#/images/avatar.gif">
+  <p class="site-author-name" itemprop="name">箱庭</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">40</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+        <span class="site-state-item-count">28</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2025</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">箱庭</span>
+</div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+<script src="/js/bookmark.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+
+<script>
+var options = {
+  bottom: '80px',
+  right: '32px',
+  left: 'unset',
+  time: '0.5s',
+  mixColor: 'transparent',
+  backgroundColor: 'transparent',
+  buttonColorDark: '#282828',
+  buttonColorLight: '#fff',
+  saveInCookies: true,
+  label: '💜',
+  autoMatchOsTheme: true
+}
+const darkmode = new Darkmode(options);
+window.darkmode = darkmode;
+darkmode.showWidget();
+</script>
+
+</body>
+</html>

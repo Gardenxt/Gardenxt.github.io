@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon.ico">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"hide","padding":18,"offset":12,"onmobile":true},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":true,"color":"#886ce4","save":"manual"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="其实没什么好看的，只是git的指令">
+<meta property="og:type" content="article">
+<meta property="og:title" content="git备用">
+<meta property="og:url" content="http://example.com/2023/03/15/%E5%B7%A5%E5%85%B7/%E6%8C%87%E4%BB%A4/index.html">
+<meta property="og:site_name" content="天王星海王安眠仓">
+<meta property="og:description" content="其实没什么好看的，只是git的指令">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2023-03-15T12:24:14.000Z">
+<meta property="article:modified_time" content="2025-07-26T17:21:24.332Z">
+<meta property="article:author" content="箱庭">
+<meta property="article:tag" content="hexo">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://example.com/2023/03/15/%E5%B7%A5%E5%85%B7/%E6%8C%87%E4%BB%A4/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>git备用 | 天王星海王安眠仓</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<style>.darkmode--activated{--body-bg-color:#282828;--content-bg-color:#333;--card-bg-color:#555;--text-color:#ccc;--blockquote-color:#bbb;--link-color:#ccc;--link-hover-color:#eee;--brand-color:#ddd;--brand-hover-color:#ddd;--table-row-odd-bg-color:#282828;--table-row-hover-bg-color:#363636;--menu-item-bg-color:#555;--btn-default-bg:#222;--btn-default-color:#ccc;--btn-default-border-color:#555;--btn-default-hover-bg:#666;--btn-default-hover-color:#ccc;--btn-default-hover-border-color:#666;--highlight-background:#282b2e;--highlight-foreground:#a9b7c6;--highlight-gutter-background:#34393d;--highlight-gutter-foreground:#9ca9b6}.darkmode--activated img{opacity:.75}.darkmode--activated img:hover{opacity:.9}.darkmode--activated code{color:#69dbdc;background:0 0}button.darkmode-toggle{z-index:9999}.darkmode-ignore,img{display:flex!important}.beian img{display:inline-block!important}</style></head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">天王星海王安眠仓</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">混吃等死</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-乙游">
+
+    <a href="/otome/" rel="section"><i class="fa fa-fw fa-heart"></i>乙游</a>
+
+  </li>
+        <li class="menu-item menu-item-进度">
+
+    <a href="/schedule/" rel="section"><i class="fa fa-fw fa-tree"></i>进度</a>
+
+  </li>
+        <li class="menu-item menu-item-搬运">
+
+    <a href="/2023/03/16/%E5%B7%A5%E5%85%B7/%E4%B9%99%E5%A5%B3%E6%B8%B8%E6%88%8F%E6%90%AC%E8%BF%90/" rel="section"><i class="fa fa-fw fa-leaf"></i>搬运</a>
+
+  </li>
+        <li class="menu-item menu-item-攻略">
+
+    <a href="/wiki/" rel="section"><i class="fa fa-fw fa-exclamation"></i>攻略</a>
+
+  </li>
+        <li class="menu-item menu-item-photos">
+
+    <a href="/photos/" rel="section"><i class="fa fa-fw fa-camera"></i>相册</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2023/03/15/%E5%B7%A5%E5%85%B7/%E6%8C%87%E4%BB%A4/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://raw.githubusercontent.com/Gardenxt/testmages/main/photo/avatar1.jpg#/images/avatar.gif">
+      <meta itemprop="name" content="箱庭">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="天王星海王安眠仓">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          git备用
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2023-03-15 20:24:14" itemprop="dateCreated datePublished" datetime="2023-03-15T20:24:14+08:00">2023-03-15</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2025-07-27 01:21:24" itemprop="dateModified" datetime="2025-07-27T01:21:24+08:00">2025-07-27</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%B7%A5%E5%85%B7/" itemprop="url" rel="index"><span itemprop="name">工具</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="这个密码看着不太对" data-whm="这个文章不能被校验">
+  <script id="hbeData" type="hbeData" data-hmacdigest="dca6afa0253a016632d290d6ede8643d2fc5085a072dde8e5667d775038ed8bc">e6748e4e2e77da3449d0290229f28226c9f9bbe5b9fc31bed3268fd361a0d751733a73cf67e052ee4cbf51f84c8f0f630b71f14b3ed38c2bdf1ef4863f978ad891886ce2b762e7338ddc41fd5d037ac35dc8affcabe3833c3f858775bacaaa3f200629209977a860f6450b29e0a7ab154e6d1296db6a15668cf33e7c6844e54ce04f680e8e0feb327cde67dca3da430daebe494b70d5875f88fccb1ce09210bfa08d396a5f24829cb4b2d15a8d3df1e1f627f2d7d5905ad988a536f61c7076db321c28457dfa06784bdf959069dbc59dd982b4cfa856591317ab31e262528731a28a4c738058f975e8d5cb4e076b18c936c4bba6c591edd425d7c9c190e9c74010ab21b6a1164be7d6e0aa408d0e160cc8ff7e901d4ab60bceada2eaa9fd5ed7d82a964de724cdf100b4ba0c6ccd4be780173444ea641d66fbdfd6841b434081f6d31efdd0edc5ff049190714f2f2d161c367482a20277223e09b4f83850994f297dc59df493513a9748ed080f13af541064493fee607d81cb141609e4082b9e83ac46c684204112eed47153d2c766dccf65ea032e16974ea4d4e49ba9b57c2134b10034901deefd9fc3910ea4835ba2f32da3670df158dfda108a0ec732c9230e699987cdc9ea12b1e684e6f63bbe11010bf9bdcafbd07685dafd40cd03602ca33a1d7e931029362fe3472bde3be19f0126a6d0349a5d8f93d123545aef1fbaca80b2f1b82554f1c52bb573e1e9e69ae848e6a794c5217444b110cd3e4c31e87495bb71bdfbe64e824fafb4f9e476394945e7788814e720da81b4b88ff362ffaaa1ed772bfdabb896a663334c787e40abfc540a91683dfa29d48f8d8aeae4dd29c0ca90b80b6a0271336793a322df3aaefc17c9c041f6f4dcee48bcdb52b28516417a5fe51a147f66bc435e438d3dee81a7b0cdc257130530af6abeff75b8a0ba047f2ad17e6da5632be9a7be31d3e714e9e8dc68f5e008ab6a09757f612ade5545393e3219f89c98b0e593f62fe69da7f9751e6c1cd4b962b08642486a0da7a031965165a2ee743b4273b5d0c83414e1c19732029f54f6944153ebed477cc5d40ec7c70c9447e942e1d5f67613c61736e25d0c7e77de141bc395e3f925f70a2516ffdfa34ccf677f7b9aebdfe08953b7c6f5d88c728afbea647eb63100b2ace98a5ca829e066ab42d0958dbd7cd3be08793c0fa7806493736994ff5d2549972364cca7149934a44dfee27e5dd87e92e0c631c771712f9ee074649fb35c9ab223db70031c78fad3e10c06abb6475c228152c7f442890aaeb74b8c0f985afb7adac2a7a2c25ec6115efc5f9da459c031fd082b4874cd4c7f0e89fd1bd984d2464fa0e1820611f22163af5f0e17371f194ab44041586d1338fe6c4da9f89ca130344a80b0ca06a656f7108b7c2b703b5034928e83a97fe578c215962bda4ccf5d1fb4eab1bb9ca100cdc7d46eece4720d5b8268f72994749c4d6d1305e548b94952f6fb047e7c4ae7ab1c92bec700cf658a98d01d1a190bae34f5f253718dfb6d0f984aa39407d573c909cb1d9b3c5b193f66df73761dbdaa8d0d82b4f73f685b4edc01bf6201da664fb398aee4c540f0d82e7eb10cfb8c255caf50aa94a17dc1c5fd662bc21f1db5e44cae999d6a537f62b1987cf2556c4d69b9b9beb169b180809d561ead762f62dc5037a690e047f34a5e64041622e496052eb81fb259112ce88dd9c1fb2cfa3565f29c4de452ef02c26a927318ecbb210016ee3d207fee57137a8108945b2aa330e65cf5547e93fa293726f7103c1b5b3252ed06e4fddbbe2091f17d00ce96fe2a4477ca1195380d11f1f4c7d281e10f6628264834ab3949d0707b7ea21bae28396c628252051549145f9230d33a0aa52bad32758df48fd28fca6ed89a95f406103c0fd13b6fdf379bb852f2f670367fb1dadd7e9cd2b1999475b166d46f49d2d63cbe2cf6774234be936c05730ddba82eb643faf1bd169a752bc9a11c8696daa97322680e082b51e5b3776b368362cdbb85a4727d3d0cfee91342fe444f607fdf307199c59b4411ae84da228abe5924f3dbe5de4e1cd31bbbe870cc8c7cb9a1f6c36e5851a9c916c34b3de31ccfa08b5cae54ecd94ecb49c8a173bd3227f4e53c7fc233b973d4eda26c5adddd27a8072966db728dce2e6f11d931288672d09894c916f4f4075094ab6d60fa436edab7ef39245ad8f8b25b08c78e62db6e25eed975eb47fb85a767a4f69cac696f9f4c5bc32d322f9434216bcbd8fcfdbd116580c73ba34e47724651eeee2f88b7b0fdd7ce2f7688a2a72c78cb65448f315ccc243eb28fb51f08e5aeafa972c5ba969f30e5d6966a3bfbb37a37688b6be10ccc84448f9acb9f73c76b847e1fdc2d378a3a183474b2a4b61a8785347c96a715d619c635e8421eef5c95ea437512f90b4035f65008a1e136e7f5ddc3cd4bae61cfbcf9fd9c171675ca231f6ee5dc2bef1d0737d26f9ed61913be52293dca1562da148947162ced2def1665055334a664dc38df0a6734451a6f</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">其实没什么好看的，只是git的指令</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/hexo/" rel="tag"># hexo</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2023/03/16/%E5%B7%A5%E5%85%B7/%E4%B9%99%E5%A5%B3%E6%B8%B8%E6%88%8F%E6%90%AC%E8%BF%90/" rel="prev" title="乙女游戏搬运">
+      <i class="fa fa-chevron-left"></i> 乙女游戏搬运
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2023/03/13/repo/%E5%A4%A7%E6%AD%A3%E5%AF%B9%E7%A7%B0%E7%88%B1%E4%B8%BD%E4%B8%9Drepo/" rel="next" title="大正对称爱丽丝repo">
+      大正对称爱丽丝repo <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="箱庭"
+      src="https://raw.githubusercontent.com/Gardenxt/testmages/main/photo/avatar1.jpg#/images/avatar.gif">
+  <p class="site-author-name" itemprop="name">箱庭</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">40</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+        <span class="site-state-item-count">28</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2025</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">箱庭</span>
+</div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+<script src="/js/bookmark.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+
+<script>
+var options = {
+  bottom: '80px',
+  right: '32px',
+  left: 'unset',
+  time: '0.5s',
+  mixColor: 'transparent',
+  backgroundColor: 'transparent',
+  buttonColorDark: '#282828',
+  buttonColorLight: '#fff',
+  saveInCookies: true,
+  label: '💜',
+  autoMatchOsTheme: true
+}
+const darkmode = new Darkmode(options);
+window.darkmode = darkmode;
+darkmode.showWidget();
+</script>
+
+</body>
+</html>

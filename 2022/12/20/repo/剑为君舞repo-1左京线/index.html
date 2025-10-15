@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon.ico">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"hide","padding":18,"offset":12,"onmobile":true},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":true,"color":"#886ce4","save":"manual"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="前言剑为君舞这个游戏一直在首页和其他人推荐，所以就尝试玩了玩。原本是走缘的路线的，发现这游戏的共通线是真的长的离谱，就重新开始打左京线了。 听到左京声音的时候，第一反应就是老祖宗，后面查了一下和小乌丸的声优都是保志总一朗，略微有点出戏但是总体还好。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="剑为君舞repo-1左京线">
+<meta property="og:url" content="http://example.com/2022/12/20/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/index.html">
+<meta property="og:site_name" content="天王星海王安眠仓">
+<meta property="og:description" content="前言剑为君舞这个游戏一直在首页和其他人推荐，所以就尝试玩了玩。原本是走缘的路线的，发现这游戏的共通线是真的长的离谱，就重新开始打左京线了。 听到左京声音的时候，第一反应就是老祖宗，后面查了一下和小乌丸的声优都是保志总一朗，略微有点出戏但是总体还好。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_12-39-20.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_12-39-22.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_12-42-10.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_12-52-59.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_13-27-07.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_13-42-07.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_13-44-41.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_13-55-05.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_16-37-38.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_16-41-52.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_16-43-51.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_16-44-44.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_16-44-54.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_16-46-12.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_17-16-34.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_17-18-11.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_17-18-34.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_17-39-10%E5%89%91%E7%BB%93%E5%B1%80%E5%85%B1%E9%80%9A.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_17-39-18.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_17-39-31.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_17-39-43.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_17-41-03.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_17-41-40.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_17-51-33.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_17-51-51.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_17-52-03.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_17-53-44.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_18-04-30.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_18-05-08.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_18-06-07.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_18-06-32.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_18-06-42.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_18-08-15.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_18-08-25.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_18-08-41.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_18-11-00.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_18-11-16.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_18-13-18.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_18-15-55.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_18-16-47.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_18-16-25.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_18-32-59.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_18-34-39.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_18-36-39.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_18-37-28.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_18-53-40.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_19-03-39.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_19-05-47.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_19-07-27.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_19-09-19.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_19-10-08.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_19-16-23.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_19-16-29.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_19-19-11.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_19-19-23.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_19-19-36.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_19-19-43.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_19-20-49.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_19-43-39.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_19-23-00.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_19-28-00.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_19-29-28.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_19-29-34.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_19-29-43.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_19-29-54.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_19-35-52.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_19-36-12.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_19-38-44.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_19-40-12.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_19-40-17.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_19-43-11.png">
+<meta property="article:published_time" content="2022-12-19T16:00:00.000Z">
+<meta property="article:modified_time" content="2025-07-26T17:21:24.325Z">
+<meta property="article:author" content="箱庭">
+<meta property="article:tag" content="乙女游戏">
+<meta property="article:tag" content="repo">
+<meta property="article:tag" content="剑为君舞">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_12-39-20.png">
+
+<link rel="canonical" href="http://example.com/2022/12/20/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>剑为君舞repo-1左京线 | 天王星海王安眠仓</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<style>.darkmode--activated{--body-bg-color:#282828;--content-bg-color:#333;--card-bg-color:#555;--text-color:#ccc;--blockquote-color:#bbb;--link-color:#ccc;--link-hover-color:#eee;--brand-color:#ddd;--brand-hover-color:#ddd;--table-row-odd-bg-color:#282828;--table-row-hover-bg-color:#363636;--menu-item-bg-color:#555;--btn-default-bg:#222;--btn-default-color:#ccc;--btn-default-border-color:#555;--btn-default-hover-bg:#666;--btn-default-hover-color:#ccc;--btn-default-hover-border-color:#666;--highlight-background:#282b2e;--highlight-foreground:#a9b7c6;--highlight-gutter-background:#34393d;--highlight-gutter-foreground:#9ca9b6}.darkmode--activated img{opacity:.75}.darkmode--activated img:hover{opacity:.9}.darkmode--activated code{color:#69dbdc;background:0 0}button.darkmode-toggle{z-index:9999}.darkmode-ignore,img{display:flex!important}.beian img{display:inline-block!important}</style></head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">天王星海王安眠仓</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">混吃等死</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-乙游">
+
+    <a href="/otome/" rel="section"><i class="fa fa-fw fa-heart"></i>乙游</a>
+
+  </li>
+        <li class="menu-item menu-item-进度">
+
+    <a href="/schedule/" rel="section"><i class="fa fa-fw fa-tree"></i>进度</a>
+
+  </li>
+        <li class="menu-item menu-item-搬运">
+
+    <a href="/2023/03/16/%E5%B7%A5%E5%85%B7/%E4%B9%99%E5%A5%B3%E6%B8%B8%E6%88%8F%E6%90%AC%E8%BF%90/" rel="section"><i class="fa fa-fw fa-leaf"></i>搬运</a>
+
+  </li>
+        <li class="menu-item menu-item-攻略">
+
+    <a href="/wiki/" rel="section"><i class="fa fa-fw fa-exclamation"></i>攻略</a>
+
+  </li>
+        <li class="menu-item menu-item-photos">
+
+    <a href="/photos/" rel="section"><i class="fa fa-fw fa-camera"></i>相册</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/12/20/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://raw.githubusercontent.com/Gardenxt/testmages/main/photo/avatar1.jpg#/images/avatar.gif">
+      <meta itemprop="name" content="箱庭">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="天王星海王安眠仓">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          剑为君舞repo-1左京线
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2022-12-20 00:00:00" itemprop="dateCreated datePublished" datetime="2022-12-20T00:00:00+08:00">2022-12-20</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2025-07-27 01:21:24" itemprop="dateModified" datetime="2025-07-27T01:21:24+08:00">2025-07-27</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%B8%B8%E6%88%8F/" itemprop="url" rel="index"><span itemprop="name">游戏</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>剑为君舞这个游戏一直在首页和其他人推荐，所以就尝试玩了玩。原本是走缘的路线的，发现这游戏的共通线是真的长的离谱，就重新开始打左京线了。</p>
+<p>听到左京声音的时候，第一反应就是老祖宗，后面查了一下和小乌丸的声优都是保志总一朗，略微有点出戏但是总体还好。</p>
+<p>左京真的好漂亮啊，红眼尾也好看，语气又温柔。剑君的角色都好好看，但是剧情好长，不想打共通线(°ー°〃)但是打完了才好去玩百夜缀。</p>
+<h2 id="剧情"><a href="#剧情" class="headerlink" title="剧情"></a>剧情</h2><p>刚开始的共通线是真的非常非常长，甚至每个人的剧情都差不多。故事背景在德川统治的幕府时期，有类似稀人、鬼族妖怪等元素。女主代替体弱多病的公主出嫁骏府城代，以及在没被告诉的情况下护送天下五剑的数珠丸。</p>
+<p>护送女主香夜的就是六位攻略对象了。奇怪的是为什么不多派点德川家的武士来护送公主，而是找了不知底细虽然很强的人来当护卫。</p>
+<p>在故事发生之前左京的性格就很有趣了，无论是表面上还是说话的语气都非常温柔，实际上是一个白切黑，杀鬼族还要接连折磨。因为血亲的仇痛恨鬼族，但是对于人还是非常有礼的，也会操心很多事情。</p>
+<p>在十一岁时，鬼族杀害了左京的家人，所以他一直在仇恨中度过，虽然渴望与香夜平淡美好的日常，但是有不得不为家人报仇。</p>
+<p><img src="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_12-39-20.png" alt="Snipaste_2022-12-30_12-39-20"></p>
+<p><img src="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_12-39-22.png" alt="Snipaste_2022-12-30_12-39-22"></p>
+<p><img src="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_12-42-10.png" alt="Snipaste_2022-12-30_12-42-10"></p>
+<p><img src="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_12-52-59.png" alt="Snipaste_2022-12-30_12-52-59"></p>
+<p><img src="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_13-27-07.png" alt="Snipaste_2022-12-30_13-27-07"></p>
+<p><img src="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_13-42-07.png" alt="Snipaste_2022-12-30_13-42-07"></p>
+<p><img src="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_13-44-41.png" alt="Snipaste_2022-12-30_13-44-41"></p>
+<p><img src="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_13-55-05.png" alt="Snipaste_2022-12-30_13-55-05"></p>
+<p><img src="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_16-37-38.png" alt="Snipaste_2022-12-30_16-37-38"></p>
+<p><img src="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_16-41-52.png" alt="Snipaste_2022-12-30_16-41-52"></p>
+<p><img src="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_16-43-51.png" alt="Snipaste_2022-12-30_16-43-51"></p>
+<p><img src="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_16-44-44.png" alt="Snipaste_2022-12-30_16-44-44"></p>
+<p><img src="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_16-44-54.png" alt="Snipaste_2022-12-30_16-44-54"></p>
+<p><img src="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_16-46-12.png" alt="Snipaste_2022-12-30_16-46-12"></p>
+<h2 id="结局"><a href="#结局" class="headerlink" title="结局"></a>结局</h2><p>总共有四个结局，剑线我觉得都是坏结局吧，不过可能因为好感度是在共同线刷的，所以每个结局都可以算作在一起了（？）</p>
+<h3 id="剑线"><a href="#剑线" class="headerlink" title="剑线"></a>剑线</h3><p>剑线左京执迷于复仇，被妖刀村正蛊惑并附身，丢弃了家族传承的萤丸，但是还是保持了片刻的清醒，只不过两个结局保持清醒的时机差了很多，因为被附身杀害了很多无辜的人，所以只能在地狱里赎罪。</p>
+<p><img src="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_17-16-34.png" alt="Snipaste_2022-12-30_17-16-34"></p>
+<p><img src="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_17-18-11.png" alt="Snipaste_2022-12-30_17-18-11"></p>
+<p><img src="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_17-18-34.png" alt="Snipaste_2022-12-30_17-18-34"></p>
+<p><img src="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_17-39-10%E5%89%91%E7%BB%93%E5%B1%80%E5%85%B1%E9%80%9A.png" alt="Snipaste_2022-12-30_17-39-10剑结局共通"></p>
+<h4 id="奇魂"><a href="#奇魂" class="headerlink" title="奇魂"></a>奇魂</h4><p>奇魂里左京在恢复清醒之后，跳入湖中摆脱妖刀村正自尽，香夜也追随了他。两个人在三途川以为可以共赴黄泉的时候，发现香夜并没有死去，所以左京让香夜回去，自己则是在地狱赎罪。在后日谈中，因为香夜实在太过想念左京，左京跟着萤火虫暂时来到了现世，并且约好了要香夜好好生活，又分开了。</p>
+<p><img src="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_17-39-18.png" alt="Snipaste_2022-12-30_17-39-18"></p>
+<p><img src="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_17-39-31.png" alt="Snipaste_2022-12-30_17-39-31"></p>
+<p><img src="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_17-39-43.png" alt="Snipaste_2022-12-30_17-39-43"></p>
+<p><img src="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_17-41-03.png" alt="Snipaste_2022-12-30_17-41-03"></p>
+<p><img src="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_17-41-40.png" alt="Snipaste_2022-12-30_17-41-40"></p>
+<p><img src="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_17-51-33.png" alt="Snipaste_2022-12-30_17-51-33"></p>
+<p><img src="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_17-51-51.png" alt="Snipaste_2022-12-30_17-51-51"></p>
+<p><img src="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_17-52-03.png" alt="Snipaste_2022-12-30_17-52-03"></p>
+<p><img src="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_17-53-44.png" alt="Snipaste_2022-12-30_17-53-44"></p>
+<h4 id="荒魂"><a href="#荒魂" class="headerlink" title="荒魂"></a>荒魂</h4><p>左京在杀害了许多人，在失去理智之后失手砍了香夜，虽然其他护卫也在旁边，但是香夜还是没能救回来，这时候左京清醒过来，绝望之后前往埋有炸弹的孔魔坛自爆死亡。最终两个人在地狱相见，左京被妖刀村正拉下地狱，香夜也决心陪着左京一起赎罪。</p>
+<p>在业火中左京失去了意识，梦境中看见本来逝去的人还活着，自己也准备跟香夜结婚。直到火中醒来，身边却依旧有着香夜陪伴和她梦中一致的笑容。</p>
+<p><img src="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_18-04-30.png" alt="Snipaste_2022-12-30_18-04-30"></p>
+<p><img src="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_18-05-08.png" alt="Snipaste_2022-12-30_18-05-08"></p>
+<p><img src="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_18-06-07.png" alt="Snipaste_2022-12-30_18-06-07"></p>
+<p><img src="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_18-06-32.png" alt="Snipaste_2022-12-30_18-06-32"></p>
+<p><img src="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_18-06-42.png" alt="Snipaste_2022-12-30_18-06-42"></p>
+<p><img src="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_18-08-15.png" alt="Snipaste_2022-12-30_18-08-15"></p>
+<p><img src="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_18-08-25.png" alt="Snipaste_2022-12-30_18-08-25"></p>
+<p><img src="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_18-08-41.png" alt="Snipaste_2022-12-30_18-08-41"></p>
+<p><img src="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_18-11-00.png" alt="Snipaste_2022-12-30_18-11-00"></p>
+<p><img src="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_18-11-16.png" alt="Snipaste_2022-12-30_18-11-16"></p>
+<p><img src="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_18-13-18.png" alt="Snipaste_2022-12-30_18-13-18"></p>
+<p><img src="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_18-15-55.png" alt="Snipaste_2022-12-30_18-15-55"></p>
+<p><img src="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_18-16-47.png" alt="Snipaste_2022-12-30_18-16-47"><img src="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_18-16-25.png" alt="Snipaste_2022-12-30_18-16-25"></p>
+<h3 id="君线"><a href="#君线" class="headerlink" title="君线"></a>君线</h3><p>他真的什么时候都在送礼物，香夜看到什么就送什么。君线都可以算作好结局，这个结局没有出现妖刀村正，原本左京因为在御前决斗体力不支，加上受了伤输给了斩铁，觉得自己不配萤丸，在跟香夜聊天过后决定拿回萤丸重新复仇。</p>
+<p>在机缘巧合之下，香夜得知斩铁召集了鬼族，准备伏击独自过来决斗的左京，联络了之前一起旅行的护卫们，帮助左京复仇，成功讨伐了斩铁。</p>
+<p><img src="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_18-32-59.png" alt="Snipaste_2022-12-30_18-32-59"></p>
+<p><img src="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_18-34-39.png" alt="Snipaste_2022-12-30_18-34-39"></p>
+<p><img src="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_18-36-39.png" alt="Snipaste_2022-12-30_18-36-39"></p>
+<p><img src="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_18-37-28.png" alt="Snipaste_2022-12-30_18-37-28"></p>
+<h4 id="幸魂"><a href="#幸魂" class="headerlink" title="幸魂"></a>幸魂</h4><p>原本以为左京准备回山城国，香夜举办了一个欢送会，在宴会上嫉妒其他人，将香夜带出去告白了，并且决定留在江户，办一个私塾。</p>
+<p><img src="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_18-53-40.png" alt="Snipaste_2022-12-30_18-53-40"></p>
+<p><img src="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_19-03-39.png" alt="Snipaste_2022-12-30_19-03-39"></p>
+<p><img src="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_19-05-47.png" alt="Snipaste_2022-12-30_19-05-47"></p>
+<p><img src="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_19-07-27.png" alt="Snipaste_2022-12-30_19-07-27"></p>
+<p><img src="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_19-09-19.png" alt="Snipaste_2022-12-30_19-09-19"></p>
+<p><img src="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_19-10-08.png" alt="Snipaste_2022-12-30_19-10-08"></p>
+<p><img src="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_19-16-23.png" alt="Snipaste_2022-12-30_19-16-23"></p>
+<p><img src="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_19-16-29.png" alt="Snipaste_2022-12-30_19-16-29"></p>
+<p><img src="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_19-19-11.png" alt="Snipaste_2022-12-30_19-19-11"></p>
+<p><img src="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_19-19-23.png" alt="Snipaste_2022-12-30_19-19-23"></p>
+<p><img src="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_19-19-36.png" alt="Snipaste_2022-12-30_19-19-36"></p>
+<p><img src="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_19-19-43.png" alt="Snipaste_2022-12-30_19-19-43"></p>
+<p><img src="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_19-20-49.png" alt="Snipaste_2022-12-30_19-20-49"></p>
+<p><img src="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_19-43-39.png" alt="Snipaste_2022-12-30_19-43-39"></p>
+<h4 id="和魂"><a href="#和魂" class="headerlink" title="和魂"></a>和魂</h4><p>左京为了重建鹭原家，跟香夜告白后先回去山城国提前准备婚礼，聘请了之前同行的护卫护送香夜，举办了一个非常重大的婚礼。也生下了跟两人都非常相似的孩子千早。</p>
+<p>这个结局算是我最喜欢的了，左京没有舍弃鹭原家，也跟香夜在一起了。</p>
+<p><img src="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_19-23-00.png" alt="Snipaste_2022-12-30_19-23-00"></p>
+<p><img src="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_19-28-00.png" alt="Snipaste_2022-12-30_19-28-00"></p>
+<p><img src="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_19-29-28.png" alt="Snipaste_2022-12-30_19-29-28"></p>
+<p><img src="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_19-29-34.png" alt="Snipaste_2022-12-30_19-29-34"></p>
+<p><img src="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_19-29-43.png" alt="Snipaste_2022-12-30_19-29-43"></p>
+<p><img src="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_19-29-54.png" alt="Snipaste_2022-12-30_19-29-54"></p>
+<p><img src="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_19-35-52.png" alt="Snipaste_2022-12-30_19-35-52"></p>
+<p><img src="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_19-36-12.png" alt="Snipaste_2022-12-30_19-36-12"></p>
+<p><img src="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_19-38-44.png" alt="Snipaste_2022-12-30_19-38-44"></p>
+<p><img src="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_19-40-12.png" alt="Snipaste_2022-12-30_19-40-12"></p>
+<p><img src="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_19-40-17.png" alt="Snipaste_2022-12-30_19-40-17"></p>
+<p><img src="https://raw.githubusercontent.com/Gardenxt/testmages/main/repo/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9Erepo-1%E5%B7%A6%E4%BA%AC%E7%BA%BF/Snipaste_2022-12-30_19-43-11.png" alt="Snipaste_2022-12-30_19-43-11"></p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E4%B9%99%E5%A5%B3%E6%B8%B8%E6%88%8F/" rel="tag"># 乙女游戏</a>
+              <a href="/tags/repo/" rel="tag"># repo</a>
+              <a href="/tags/%E5%89%91%E4%B8%BA%E5%90%9B%E8%88%9E/" rel="tag"># 剑为君舞</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2022/12/26/repo/%E6%88%91%E7%9A%84%E8%B6%85%E7%BA%A7%E7%8E%B0%E5%85%85%E7%94%9F%E6%B4%BBrepo/" rel="prev" title="我的超级现充生活repo">
+      <i class="fa fa-chevron-left"></i> 我的超级现充生活repo
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2022/12/18/%E6%97%A5%E5%B8%B8/%E6%97%A5%E5%B8%B84/" rel="next" title="好想写文">
+      好想写文 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%89%A7%E6%83%85"><span class="nav-number">2.</span> <span class="nav-text">剧情</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BB%93%E5%B1%80"><span class="nav-number">3.</span> <span class="nav-text">结局</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%89%91%E7%BA%BF"><span class="nav-number">3.1.</span> <span class="nav-text">剑线</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%A5%87%E9%AD%82"><span class="nav-number">3.1.1.</span> <span class="nav-text">奇魂</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%8D%92%E9%AD%82"><span class="nav-number">3.1.2.</span> <span class="nav-text">荒魂</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%90%9B%E7%BA%BF"><span class="nav-number">3.2.</span> <span class="nav-text">君线</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%B9%B8%E9%AD%82"><span class="nav-number">3.2.1.</span> <span class="nav-text">幸魂</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%92%8C%E9%AD%82"><span class="nav-number">3.2.2.</span> <span class="nav-text">和魂</span></a></li></ol></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="箱庭"
+      src="https://raw.githubusercontent.com/Gardenxt/testmages/main/photo/avatar1.jpg#/images/avatar.gif">
+  <p class="site-author-name" itemprop="name">箱庭</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">40</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+        <span class="site-state-item-count">28</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2025</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">箱庭</span>
+</div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+<script src="/js/bookmark.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+
+<script>
+var options = {
+  bottom: '80px',
+  right: '32px',
+  left: 'unset',
+  time: '0.5s',
+  mixColor: 'transparent',
+  backgroundColor: 'transparent',
+  buttonColorDark: '#282828',
+  buttonColorLight: '#fff',
+  saveInCookies: true,
+  label: '💜',
+  autoMatchOsTheme: true
+}
+const darkmode = new Darkmode(options);
+window.darkmode = darkmode;
+darkmode.showWidget();
+</script>
+
+</body>
+</html>
